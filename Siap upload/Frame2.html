@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="in">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Praktikum Pemrograman Web Frame</title>
+  <style>
+
+header {
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  margin-right: 20px;
+  border-radius: 50px;
+}
+
+header h1 {
+  flex: 1;
+}
+    
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box; 
+
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f3f3f3;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    nav {
+      background-color: #2980b9;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    nav ul li {
+      margin: 0 10px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ecf0f1;
+    }
+
+    .content {
+      display: flex;
+      gap: 20px;
+    }
+
+    .article {
+      flex: 3;
+      background-color: #ecf0f1;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .article h2 {
+      margin-bottom: 10px;
+      font-size: 1.8rem;
+      color: #2980b9;
+    }
+
+    .article button {
+      background-color: #3498db;
+      color: white;
+      border: none;
+      padding: 10px;
+      margin: 10px 0;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .article button:hover {
+      background-color: #2980b9;
+    }
+
+    .article iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      margin-top: 10px;
+    }
+
+    aside {
+      flex: 1;
+      background-color: #bdc3c7;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    aside h3 {
+      margin-bottom: 10px;
+      font-size: 1.6rem;
+    }
+
+    footer {
+      background-color: #34495e;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 8px;
+    }
+
+    footer p {
+      margin-bottom: 10px;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .content {
+        flex-direction: column;
+      }
+    }
+
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+        <img src="Foto Contoh.jpeg" alt="Logo" class="logo">
+        <h1>Cyber Academy Indonesia</h1>
+        <p>0110224006 Teknik Informatika 2024</p>
+      </header>
+
+    <nav>
+      <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="CV.html">About Me</a></li>
+        <li><a href="#">Event Live Class</a></li>
+        <li><a href="Hubungi Kami.html">Hubungi Kami</a></li>
+      </ul>
+    </nav>
+
+    <div class="content">
+      <div class="article">
+          <h2>Daftar Artikel Keamanan Siber</h2>
+          <p>Berikut adalah daftar artikel menarik seputar dunia keamanan siber yang bisa Anda pelajari:</p>
+          
+          <table>
+              <thead>
+                  <tr>
+                      <th>No</th>
+                      <th>Judul Artikel</th>
+                      <th>Deskripsi Singkat</th>
+                      <th>Tanggal Terbit</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>1</td>
+                      <td><a href="https://surabaya.telkomuniversity.ac.id/phishing-pengertian-jenis-dan-cara-menghindari-phising/">Memahami Serangan Phishing dan Cara Menghindarinya</a></td>
+                      <td>Artikel ini membahas tentang taktik serangan phishing, contoh kasus, dan langkah-langkah pencegahan.</td>
+                      <td>10 Oktober 2024</td>
+                  </tr>
+                  <tr>
+                      <td>2</td>
+                      <td><a href="https://geloraperkasa.com/security-system/tips-meningkatkan-sistem-keamanan-di-rumah/">Tips Meningkatkan Keamanan Jaringan di Rumah</a></td>
+                      <td>Temukan berbagai cara sederhana untuk melindungi jaringan rumah Anda dari ancaman siber.</td>
+                      <td>12 September 2024</td>
+                  </tr>
+                  <tr>
+                      <td>3</td>
+                      <td><a href="https://blog.unmaha.ac.id/peran-firewall-dalam-keamanan-jaringan-komputer/">Peran Firewall dalam Melindungi Sistem Anda</a></td>
+                      <td>Pahami cara kerja firewall dan bagaimana perangkat ini dapat melindungi jaringan dari serangan luar.</td>
+                      <td>5 Agustus 2024</td>
+                  </tr>
+                  <tr>
+                      <td>4</td>
+                      <td><a href="https://blog.unmaha.ac.id/peran-firewall-dalam-keamanan-jaringan-komputer/">Keamanan di Cloud: Tantangan dan Solusi</a></td>
+                      <td>Artikel ini membahas tentang tantangan yang dihadapi saat menggunakan layanan cloud dan cara mengamankannya.</td>
+                      <td>25 Juli 2024</td>
+                  </tr>
+              </tbody>
+          </table>
+      </section>
+      
+        <p>Pilih salah satu konten saya dari Section di bawah ini:</p>
+        <button onclick="changeContent('Pengenalan Keamanan Siber', '<p>Keamanan siber adalah bidang yang berfokus pada perlindungan data, perangkat keras, dan perangkat lunak dari serangan berbahaya. Penting untuk memahami berbagai jenis ancaman, mulai dari peretasan hingga malware.</p><h3>Jenis-Jenis Ancaman Siber:</h3><ul><li><b>Malware:</b> Program jahat yang dapat merusak perangkat atau mencuri data.</li><li><b>Phishing:</b> Penipuan untuk mencuri informasi sensitif seperti kata sandi.</li><li><b>Serangan DDoS:</b> Membanjiri server dengan permintaan hingga menyebabkan crash.</li></ul><h3>Contoh Kasus Keamanan Siber:</h3><p>Salah satu contoh serangan besar adalah pelanggaran data Equifax pada tahun 2017, di mana informasi sensitif dari 143 juta orang dicuri. Ini menunjukkan pentingnya keamanan siber bagi perusahaan besar.</p>')">Introduction</button>
+        <button onclick="changeContent('Teknik Keamanan Siber', '<p>Keamanan siber mencakup berbagai teknik untuk melindungi data dan sistem dari ancaman. Berikut beberapa teknik penting yang digunakan dalam dunia keamanan siber:</p><h3>1. Firewall</h3><p>Firewall bertindak sebagai penghalang antara jaringan internal dan eksternal, membatasi lalu lintas yang mencurigakan.</p><h3>2. Enkripsi</h3><p>Enkripsi melindungi data dengan mengubahnya menjadi kode rahasia sehingga hanya pihak yang berwenang yang bisa membacanya. Ini sering digunakan pada komunikasi digital dan penyimpanan data.</p><h3>3. Otentikasi Multi-Faktor (MFA)</h3><p>MFA memerlukan lebih dari satu metode untuk mengonfirmasi identitas pengguna, seperti kombinasi kata sandi dan OTP (One Time Password).</p><h3>4. Penetration Testing</h3><p>Penetration testing adalah teknik pengujian untuk menemukan kerentanan dalam sistem sebelum diretas oleh pihak berbahaya. Para pentester (ethical hackers) sering melakukan tes ini.</p>')">Technical</button>
+        <button onclick="changeContent('Karier di dunia Cyber Security', '<p>Keamanan siber adalah industri yang berkembang pesat dengan berbagai peluang karier. Beberapa peran populer dalam keamanan siber meliputi:</p><h3>1. Security Analyst</h3><p>Seorang Security Analyst bertugas memantau jaringan, menganalisis potensi ancaman, dan memperbaiki celah keamanan. Mereka sering menggunakan alat seperti SIEM (Security Information and Event Management).</p><h3>2. Penetration Tester (Ethical Hacker)</h3><p>Pentester menguji sistem keamanan dengan mencoba meretasnya secara legal, untuk menemukan kerentanan yang dapat diperbaiki sebelum diambil keuntungan oleh pihak jahat.</p><h3>3. Security Consultant</h3><p>Security Consultant memberikan saran kepada perusahaan tentang bagaimana mereka bisa meningkatkan keamanan mereka, baik dari sisi teknis maupun kebijakan.</p><h3>4. Cyber Security Architect</h3><p>Seorang arsitek keamanan bertanggung jawab atas desain infrastruktur keamanan perusahaan. Mereka merancang jaringan yang tahan terhadap serangan dan menciptakan sistem yang aman.</p><h3>Sertifikasi yang Diperlukan:</h3><ul><li>Certified Information Systems Security Professional (CISSP)</li><li>Certified Ethical Hacker (CEH)</li><li>CompTIA Security+</li><li>Certified Information Security Manager (CISM)</li>>/ul>')">Carrier</button>
+        <iframe id="contentFrame"></iframe>
+      </div>
+
+      <aside>
+        <h3>Tempat Belajar dan Sumber Daya</h3>
+        <p>Berikut adalah beberapa sumber daya yang direkomendasikan untuk memulai dan memperdalam pengetahuan tentang keamanan siber:</p>
+        <ul>
+            <li><a href="https://www.coursera.org">Coursera: Kursus Cyber Security</a></li>
+            <li><a href="https://www.udemy.com">Udemy: Pelatihan Ethical Hacking</a></li>
+            <li><a href="https://www.cybrary.it">Cybrary: Pelatihan Keamanan Gratis</a></li>
+            <li><a href="https://www.pluralsight.com">Pluralsight: Keamanan Jaringan dan Sertifikasi</a></li>
+            <li><a href="https://www.ec-council.org/programs/certified-ethical-hacker-ceh/">EC-Council: Sertifikasi CEH</a></li>
+        </ul>
+    
+        <h3>Event dan Webinar Keamanan Siber</h3>
+        <p>Jangan lewatkan event atau webinar terkait keamanan siber yang akan datang:</p>
+        <ul>
+            <li><a href="https://www.blackhat.com/">Black Hat 2024</a></li>
+            <li><a href="https://www.defcon.org/">DEF CON 32</a></li>
+            <li><a href="https://www.rsaconference.com/">RSA Conference 2024</a></li>
+        </ul>
+    </aside>
+    </div>
+
+    <footer>
+      <p>Made by Hisyam &copy; 2024</p>
+      <p>
+        <a href="mailto:muhammadhisyamalfaris2085@gmail.com">info@gmail.com</a> | 
+        <a href="tel:+6285691753134">085691753134</a>
+      </p>
+    </footer>
+  </div>
+
+  <script>
+    function changeContent(title, content) {
+      let frame = document.getElementById('contentFrame').contentWindow.document;
+      frame.open();
+      frame.write("<h1>" + title + "</h1><p>" + content + "</p>");
+      frame.close();
+    }
+  </script>
+
+</body>
+</html>
